@@ -132,6 +132,7 @@ async function run() {
 
     });
 
+    // Add Doctor API
     app.post('/doctors', async (req, res) => {
       const doctor = req.body;
       const result = await doctorsCollection.insertOne(doctor);
